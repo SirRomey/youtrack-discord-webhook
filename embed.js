@@ -23,32 +23,32 @@ class Embed {
     /**
      * @param {Author} author
      */
-    set author(author) {this._author = author;}
+    set author(author) { this._author = author; }
 
     /**
      * @param {string} body
      */
-    set body(body) {this._body = body;}
+    set body(body) { this._body = body; }
 
     /**
      * @param {Fields[]} fields
      */
-    set fields(fields) {this._fields = fields;}
+    set fields(fields) { this._fields = fields; }
 
     /**
      * @param {string} imageUrl
      */
-    set imageUrl(imageUrl) {this._imageUrl = imageUrl;}
+    set imageUrl(imageUrl) { this._imageUrl = imageUrl; }
 
     /**
      * @param {string} thumbnailUrl
      */
-    set thumbnailUrl(thumbnailUrl) {this._thumbnailUrl = thumbnailUrl;}
+    set thumbnailUrl(thumbnailUrl) { this._thumbnailUrl = thumbnailUrl; }
 
     /**
      * @param {Footer} footer
      */
-    set footer(footer) {this._footer = footer;}
+    set footer(footer) { this._footer = footer; }
 
     /**
      * Adds a Field to the Embed.
@@ -67,8 +67,8 @@ class Embed {
 
         obj.author = this._author;
         if (this._fields.length > 0) obj.fields = this._fields;
-        if (this._imageUrl) obj.image = {url: this._imageUrl}; //What on earth Discord?
-        if (this._thumbnailUrl) obj.thumbnail = {url: this._thumbnailUrl};
+        if (this._imageUrl) obj.image = { url: this._imageUrl }; //What on earth Discord?
+        if (this._thumbnailUrl) obj.thumbnail = { url: this._thumbnailUrl };
         obj.footer = this._footer;
 
         return obj;
@@ -98,22 +98,22 @@ class Body {
     /**
      * @param {string} title
      */
-    set title(title) {this._title = title;}
+    set title(title) { this._title = title; }
 
     /**
      * @param {string} description
      */
-    set description(description) {this._description = description;}
+    set description(description) { this._description = description; }
 
     /**
      * @param {string} url
      */
-    set url(url) {this._url = url;}
+    set url(url) { this._url = url; }
 
     /**
      * @param {string} color The colour of the embed as a hexadecimal colour value (omit the _).
      */
-    set color(color) {this._color = color;}
+    set color(color) { this._color = color; }
 
     /**
      * @returns {number} The embed colour in decimal.
@@ -125,7 +125,7 @@ class Body {
     /**
      * @param {string} timestamp
      */
-    set timestamp(timestamp) {this._timestamp = timestamp;}
+    set timestamp(timestamp) { this._timestamp = timestamp; }
 
     /**
      * Sets the timestamp of the embed to the time this method is called.
@@ -168,17 +168,17 @@ class Author {
     /**
      * @param {string} name
      */
-    set name(name) {this._name = name;}
+    set name(name) { this._name = name; }
 
     /**
      * @param {string} url
      */
-    set url(url) {this._url = url;}
+    set url(url) { this._url = url; }
 
     /**
      * @param {string} iconUrl
      */
-    set iconUrl(iconUrl) {this._iconUrl = iconUrl;}
+    set iconUrl(iconUrl) { this._iconUrl = iconUrl; }
 
     /**
      * Returns a JSON.stringify friendly object in the format used by Discord.
@@ -212,17 +212,17 @@ class Field {
     /**
      * @param {string} name
      */
-    set name(name) {this._name = name;}
+    set name(name) { this._name = name; }
 
     /**
      * @param {string} description
      */
-    set description(description) {this._description = description;}
+    set description(description) { this._description = description; }
 
     /**
      * @param {string} isInline
      */
-    set isInline(isInline) {this._isInline = isInline;}
+    set isInline(isInline) { this._isInline = isInline; }
 
     /**
      * Returns a JSON.stringify friendly object in the format used by Discord.
@@ -254,12 +254,12 @@ class Footer {
     /**
      * @param {string} text
      */
-    set text(text) {this._text = text;}
+    set text(text) { this._text = text; }
 
     /**
      * @param {string} iconUrl
      */
-    set iconUrl(iconUrl) {this._iconUrl = iconUrl;}
+    set iconUrl(iconUrl) { this._iconUrl = iconUrl; }
 
     /**
      * Returns a JSON.stringify friendly object in the format used by Discord.

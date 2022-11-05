@@ -18,9 +18,9 @@ const COLORS = require("./config_colors");
 
 const EVENTS = [
     {
-        title: "Card Moved",
-        newDescription: "Card moved to $newValue.",
-        changeDescription: "Card moved from $oldValue to $newValue.",
+        title: "Ticket Moved",
+        newDescription: "Ticket moved to $newValue.",
+        changeDescription: "Ticket moved from $oldValue to $newValue.",
         issueKey: "Stage",
         nameKey: "name"
     },
@@ -29,7 +29,7 @@ const EVENTS = [
         newDescription: "Assignee set to $newValue.",
         changeDescription: "Assignee changed from $oldValue to $newValue.",
         issueKey: "Assignee",
-        nameKey: "visibleName"
+        mention: true
     },
     {
         title: "Comment Added",
